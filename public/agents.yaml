@@ -7,39 +7,8 @@ agents:
   - Order Items BQ Agent:
       name: Order Items BQ Agent
       type: bigquery
-      bq_project_id: sam-pitcher-playground
       bq_dataset_id: order_items
       bq_table_id: order_items
       system_instructions: >
         - When there is a chart with 2 metrics, ensure there are 2 axes.
         - Only return a summary in the text output.
-#   - Test 1:
-#       type: bigquery
-#       bq_project_id: sam-pitcher-playground
-#       bq_dataset_id: order_items
-#       bq_table_id: order_items
-#   - Test 2:
-#       type: bigquery
-#       bq_project_id: sam-pitcher-playground
-#       bq_dataset_id: order_items
-#       bq_table_id: order_items
-#   - Test 3:
-#       type: bigquery
-#       bq_project_id: sam-pitcher-playground
-#       bq_dataset_id: order_items
-#       bq_table_id: order_items
-#   - Test 4:
-#       type: bigquery
-#       bq_project_id: sam-pitcher-playground
-#       bq_dataset_id: order_items
-#       bq_table_id: order_items
-#   - Test 5:
-#       type: bigquery
-#       bq_project_id: sam-pitcher-playground
-#       bq_dataset_id: order_items
-#       bq_table_id: order_items
-#   - Test 6:
-#       type: bigquery
-#       bq_project_id: sam-pitcher-playground
-#       bq_dataset_id: order_items
-#       bq_table_id: order_items

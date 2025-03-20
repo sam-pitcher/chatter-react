@@ -221,7 +221,7 @@ export const Chatter = ({ accessToken, agentConfig }) => {
                         bq: {
                             table_references: [
                                 {
-                                    project_id: agentConfig.project_id,
+                                    project_id: GCP_PROJECT_NAME,
                                     dataset_id: agentConfig.dataset_id,
                                     table_id: agentConfig.table_id,
                                 },
