@@ -1,0 +1,346 @@
+/* App.css - Generated from styles.js */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #282c34;
+  color: white;
+}
+
+.App {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  font-family: 'Roboto', sans-serif;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes typingDots {
+  0%, 80%, 100% {
+    transform: scale(0.3);
+  }
+  40% {
+    transform: scale(1.0);
+  }
+}
+
+.TypingDotsContainer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.TypingDot {
+  width: 6px;
+  height: 6px;
+  background-color: #888;
+  border-radius: 50%;
+  animation: typingDots 1.4s infinite ease-in-out;
+}
+
+.TypingDot:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.TypingDot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.TypingDot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.MessageContainer {
+  display: flex;
+  align-self: flex-start;
+  background-color: #f1f3f4;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 75%;
+  word-wrap: break-word;
+}
+
+.Avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.MessageWrapper {
+  display: flex;
+  align-items: flex-start;
+  margin: 8px 0;
+  gap: 8px;
+}
+
+.chatBotContainer {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  overflow: hidden;
+  font-family: Roboto, Arial, sans-serif;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.selectionContainer {
+  padding: 16px;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+
+.chartContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border: 2px solid grey;
+}
+
+.dropdown {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 14px;
+  flex: 1;
+  max-width: 280px;
+  color: #333;
+  transition: border-color 0.2s ease;
+}
+
+.chatMessages {
+  height: 65vh; /* 80% of the viewport height */
+  padding: 12px;
+  overflow-y: auto; /* Add scroll if content exceeds height */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputSection {
+  display: flex;
+  padding: 16px;
+  border-top: 1px solid #eee;
+  background-color: #fff;
+  gap: 12px;
+}
+
+.input {
+  flex: 1;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-family: Roboto;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  min-height: 30px;
+  max-height: 80px;
+  resize: none;
+  overflow: auto;
+  transition: border-color 0.2s ease;
+}
+
+.button {
+  padding: 10px 18px;
+  font-size: 14px;
+  border-radius: 8px;
+  background-color: #4285f4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #1867c0;
+}
+
+.preformatted {
+  margin: 0;
+  font-size: 14px;
+  font-family: Roboto;
+}
+
+.loginButton {
+  background-color: #4285f4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.signinContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8px auto;
+  font-family: Roboto, sans-serif;
+}
+
+.google-login-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #4285F4;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.google-login-button:hover {
+  background-color: #3367d6;
+}
+
+.google-login-button:focus {
+  outline: none;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  /* display: wrap; */
+  flex-direction: column;
+
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.tabs {
+  width: 220px;
+  background: linear-gradient(to right, #ffffff, #f8f8f8);
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  transition: width 0.3s ease-in-out, background 0.2s ease-in-out;
+  overflow: hidden;
+  box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
+  gap: 10px;
+}
+
+.tabs.collapsed {
+  width: 60px; /* More spacious for icons */
+}
+
+.collapse-toggle {
+  padding: 12px;
+  /* background: #3498db; */
+  border: 12px;
+  cursor: pointer;
+  width: 100%;
+  color: rgb(34, 96, 112);
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.collapse-toggle:hover {
+  background: #b1d3e9;
+}
+
+.tab-button {
+  padding: 12px;
+  margin-bottom: 8px; /* Adds spacing between buttons */
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #444;
+  border-radius: 6px;
+  transition: background 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.tab-button:hover {
+  background: rgba(52, 152, 219, 0.2);
+}
+
+.tab-button.active {
+  background: #3498db;
+  color: white;
+  font-weight: bold;
+  border: 12px;
+  /* transform: scale(1.05); */
+}
+
+.tabs.collapsed .tab-button {
+  justify-content: center;
+}
+
+.tabs.collapsed .tab-button span {
+  display: none; /* Hide text */
+}
+
+.tabs.collapsed .tab-button::before {
+  content: "💬"; /* Placeholder for icons */
+  font-size: 18px;
+}
+
+.nav-title {
+  color: black;
+}
